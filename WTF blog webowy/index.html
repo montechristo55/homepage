@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co ten frontend Post</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700,700i|Source+Code+Pro:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+
+        <header class="header">
+            <h1 class="logo">Blog technologii webowych</h1>
+            <p class="logo1">Witaj w świecie front endu!</p>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" title="PRZEJDŹ DO" class="anim">Strona główna</a></li>
+                    <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">HTML</a></li>
+                    <li><a href="odpalamy.html" title="PRZEJDŹ DO" class="anim">CSS</a></li>
+                    <li><a href="teraz-java.html" title="PRZEJDŹ DO" class="anim">JavaScript</a></li>
+                    <li><a href="narzedzia.html" title="PRZEJDŹ DO" class="anim">Narzędzia</a></li>
+                    <li><a href="pasja-informatyki.html" title="PRZEJDŹ DO" class="anim">Pasja informatyki</a></li>
+                    <li><a href="oautorze.html" title="PRZEJDŹ DO" class="anim">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div> <img src="matrix2.jpg" alt="ilustracja-kodu" height="200" />
+                <br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
+            </div>
+            <section class="content">
+                <h2>HTML Tydzień pierwszy</h2>
+
+                <article class="headboard">
+                    <h3>Czym jest <span>HTML</span>?</h3>
+
+                    <section class="main-section">
+                        <p class="introduction"><span>HTML</span> to skrót od <span>Hypertext Markup Language</span>. Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość strony internetowej.<br />
+                            <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie;
+                        </p>
+                        Idąc dalej tym tokiem możemy okreslić <span>znacznik (tag)</span> jako element dokumentu HTML, który jest zapisany z użyciem nawiasów ostrych;
+
+                        <br /> I tak wyróżniamy:
+                        <br /> - znacznik pojedynczy <span>&lt; img /></span>
+                        <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span>
+                        <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w postaci: <span>nazwa_atrybutu</span>=”wartość”</p>
+                    </section>
+                    <div>
+                        <img src="matrix3.jpg" alt="jakis-badziew-do-wymiany" height="300">
+                    </div>
+                    <section class="sum-up">Reasumując…&nbsp;<br />
+                        <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                        <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                            /a>
+                        </span>natomiast href to adres (hyper text reference), do którego ma prowadzić link; i tak:
+                        <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
+                        <span>&lt;/a></span> A wiec przykładowo jezeli chcemy umiescić link do strony onet.pl to zapiszemy:
+                        <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                        <span>></span>KLIKNIJ <span>&lt;/a></span>
+                        <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie trzeba pamiętać o umieszczeniu pełnego adresu, włącznie z protokołem <span> http://
+                        </span>chyba, że adres mieści się w Twojej własnej domenie;
+                        <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                        <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                        <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+
+                    </section>
+                    <span class="go-back"><a href="#header">Powrót do góry strony!</a></span>
+                </article>
+                <!-- <article>
+                <h3>Czym sie chce zajmować?</h3>
+                Tworzeniem stron internetowych oraz ich administracją, tworzeniem filmów i relacji z odbytych pielgrzymek, pokazywaniem miejsc kultu i ich historią. Organizowanie pielgrzymek morskich oraz pielgrzymek Ignacjańskich.
+            </article> -->
+            </section>
+
+            <aside class="sidepanel">
+                <ul>
+                    <li>Tydzień 1</li>
+                    <li>Tydzień 2</li>
+                    <li>Tydzień 3</li>
+                    <li>Tydzień 4</li>
+                    <li>Tydzień 5</li>
+                    <li>Tydzień 6</li>
+                    <li>Tydzień 7</li>
+                </ul>
+
+            </aside>
+        </div>
+        <footer class="footer">
+            Strona osobowa Krzysztofa Krzycha Przybylskiego. &Copywright 2020r.
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+    body {
+        margin: auto;
+        margin-left: 80px;
+        background: linear-gradient(to right, #859398, #283048);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #fefefe;
+        font-family: serif sans-serif;
+        font-size: 18px;
+        display: flex;
+    }
+    
+    .container {
+        width: 1000px;
+    }
+    
+    h1.logo {
+        font-size: 48px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: center;
+    }
+    
+    nav {
+        justify-content: center;
+        text-align: center;
+        list-style-type: none;
+        color: #a9a9a9;
+    }
+    
+    h2 {
+        color: #0a2b42;
+    }
+    
+    .foto {
+        height=200px;
+        width=200px;
+    }
+    
+    .logo1 {
+        text-align: center;
+    }
+    
+    .main-section {
+        font-size: 22px;
+    }
+    
+    .sum-up {
+        font-size: 22px;
+        flex-direction: row;
+    }
+    
+    span {
+        color: #0a2b42;
+        font-weight: 700;
+    }
+    
+    .menu {
+        margin: 0px;
+        padding: 10px;
+        font-size: 18px;
+        min-height: 40px;
+        line-height: 200%;
+    }
+    
+    .menu>li {
+        display: inline-block;
+        list-style-type: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-right: 1px dashed #fff;
+    }
+    
+    .menu>li:first-child {
+        border-left: 1px dashed #fff;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #fefefe;
+    }
+    
+    .menu a :hover {
+        color: #0a2b42;
+    }
+    
+    .headboard {
+        width: 600px;
+        display: inline-block;
+    }
+    
+    .content {
+        width: 1000px;
+        display: inline-block;
+    }
+    
+    .sidepanel {
+        display: inline-block;
+        list-style-type: none;
+        font-size: 24px;
+        list-style-type: none;
+        background-color: red;
+    }
+    
+    .go-back a {
+        text-decoration: none;
+        color: #283048;
+        font-size: 24px;
+    }
+    
+    .footer {
+        background-color: #283048;
+        text-align: center;
+    }
