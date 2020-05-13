@@ -1,26 +1,28 @@
     body {
-        margin: auto;
+        margin: 0 auto;
         margin-left: 80px;
         background: linear-gradient(to right, #859398, #283048);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: #fefefe;
-        font-family: serif sans-serif;
+        font-family:sans-serif;
         font-size: 18px;
         display: flex;
     }
     
-    .container {
+    .web-container {
         width: 1000px;
+        margin: 0 auto;
     }
     
-    h1.logo {
+    .logo {
         font-size: 48px;
         letter-spacing: 5px;
         text-transform: uppercase;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 40px;
         display: center;
+    }
+    .sentence{
+        display:flex;
+        
     }
     
     nav {
