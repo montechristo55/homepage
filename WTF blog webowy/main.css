@@ -1,21 +1,21 @@
     body {
-        
         background: linear-gradient(to right, #859398, #283048);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: #fefefe;
         font-family:sans-serif;
-        font-size: 18px;
+        font-size: 22px;
         display: flex;
         margin: 0 auto auto 50px;
     }
-    .web-container {
+    .content__container {
+        display:block;
         width: 1000px;
         margin: 0 auto auto 50px;
     }
     .header{
-
+        margin: 0 auto auto 50px;
     }
-    .logo {
+    .header__logo{
         font-size: 48px;
         letter-spacing: 5px;
         text-transform: uppercase;
@@ -23,90 +23,125 @@
         justify-content:center;
         padding-top: 20px;
     }
-    .sentence{
+    .header__logo--sentence{
         display:flex;
         justify-content:center;
         align-items:center;
         text-transform: uppercase;
         letter-spacing: 2px;
+        padding-bottom: :10px;
     }
-    
-    nav {
+    .header__nav {
+        display:flex;
         justify-content: center;
-        text-align: center;
         list-style-type: none;
         color: #a9a9a9;
-        background-color:#283048;
+        background-color:rgba(40, 48, 72, 0.8);
+        border-radius: 12px;
     }
-    .menu {
+    .header__nav--menu {
+        display:flex;
+        justify-content:center;
         margin: 0px;
         padding: 10px;
         font-size: 18px;
         min-height: 40px;
         line-height: 200%;
     }
-    h2 {
-        color: #0a2b42;
-    }   
-    .logo1 {
-        text-align: center;
-    }
-    span {
-        color: #0a2b42;
-        font-weight: 700;
-    }
-    .menu>li {
-        display: inline-block;
-        list-style-type: none;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-right: 1px dashed #fff;
+    .header__nav--menu a:hover {
+        background-color: white;
+        color:rgb(40, 48, 72);
+        border-radius: 5px;
+        padding: 0px 2px;
     }
     
-    .menu>li:first-child {
+    .header__nav--menu>li {
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px dashed #fff;
+    }
+    .header__nav--menu>li:first-child {
         border-left: 1px dashed #fff;
     }
-    .menu a {
+    .header__nav--menu a {
         text-decoration: none;
         color: #fefefe;
         padding: 1px;
     }
-    .menu a :hover {
+    .header__nav--menu a :hover {
         color: #0a2b42;
         background-color: white;
         border-radius: 5px;
     }
+    .topbar{
+        display:flex;
+        justify-content:center;
+        margin: 10px 0px;
+        height: 200px;
+    }
     
+    .main__content{
+        width: 1000px;
+    }
     .headboard {
-        width: 1000px;
-        display: inline-block;
-        
+        width: 1000px; 
+        height: 200px;
+        overflow:hidden;
+        border: 2px solid #0a2b42;
+        padding:10px;
+    }
+    .headboard__article--title {
+        color: #0a2b42;
+        font-size: 28px;
+    }
+    .headboard__article--header{
+        font-size: 22px;
+    }
+    span {
+        color: #0a2b42;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    p {
+        font-size: 22px;
+
+    }
+    .article__content {
+        font-size: 22px;
+    }
+    .article__sum--up {
+        font-size: 22px;
     }
     
-    .content-container{
-        width: 1000px;
-        display: inline-block;
-    }
-    .main-section {
-        font-size: 22px;
-    }
-    .sum-up {
-        font-size: 22px;
-    }
+    
+
+
     .sidepanel {
         display: inline-block;
         list-style-type: none;
         font-size: 24px;
         list-style-type: none;
         background-color: red;
+        
     }
     
     .go-back a {
+        display:flex;
+        justify-content: flex-end;
         text-decoration: none;
         color: #283048;
         font-size: 24px;
+        margin-top: 20px;
     }
-    
+    .go-back a:hover{
+        display:flex;
+        justify-content: flex-end;
+        color: #0a2b42;
+        background-color: white;
+        border-radius: 5px;
+        
+    }
     .footer {
         background-color: #283048;
         text-align: center;
