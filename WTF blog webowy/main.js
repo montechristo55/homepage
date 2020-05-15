@@ -1,4 +1,3 @@
-alert('Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie');
 const firstName = 'Krzysztof';
 const age = 39;
 

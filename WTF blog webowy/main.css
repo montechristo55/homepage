@@ -4,10 +4,11 @@
         color: #fefefe;
         font-family:sans-serif;
         font-size: 22px;
-        margin: 0 auto auto 50px;
+        margin: auto;
+        max-width: 1000px;
     }
     .content__container {
-        width: 1000px;
+        max-width: 1000px;
         margin: 0 auto auto 50px;
     }
     .header{
@@ -80,14 +81,15 @@
     }
     
     .main__content{
-        width: 1000px;
+        max-width: 1000px;
     }
-    .headboard {
-        width: 1000px; 
+    .headboard { 
         height: 200px;
         overflow:auto;
         border: 2px solid #0a2b42;
+        border-radius: 5px;
         padding:10px;
+        margin: 15px 0px;
     }
     .headboard__article--title {
         color: #0a2b42;
@@ -144,6 +146,6 @@
         background-color: #283048;
         text-align:center;
         border-radius: 5px;
-        
+        margin:15px auto;
         
     }
