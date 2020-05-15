@@ -1,7 +1,9 @@
-const firstName: Krzysztof
-const age: 39;
+alert('Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie');
+const firstName = 'Krzysztof';
+const age = 39;
 
-console.log: (firstName);
-console.log: (age);
+console.log(firstName);
+console.log(age);
 
-console.log('Witay, nazywam sie ${firstName} i mam ${age} lat');
+console.log(`Cześć, nazywam sie ${firstName} i mam ${age} lat`);
+
