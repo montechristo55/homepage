@@ -13,62 +13,100 @@
 
 <body>
 
-    <header id="header">
-        <h1 class="logo">Blog technologii webowych!</h1>
-        <nav>
-           
-            <ul class="menu">
-                <li><a href="index.html" title="PRZEJDŹ DO" class="anim">Strona główna</a></li>
-                <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">HTML</a></li>
-                <li><a href="odpalamy.html" title="PRZEJDŹ DO" class="anim">CSS</a></li>
-                <li><a href="teraz-java.html" title="PRZEJDŹ DO" class="anim">JavaScript</a></li>
-                <li><a href="narzedzia.html" title="PRZEJDŹ DO" class="anim">Narzędzia</a></li>
-                <li><a href="pasja-informatyki.html" title="PRZEJDŹ DO" class="anim">Pasja informatyki</a></li>
-                <li><a href="oautorze.html" title="PRZEJDŹ DO" class="anim">O autorze</a></li>
-                <li><a href="kontakt.html" title="PRZEJDŹ DO" class="anim">Kontakt</a></li>
+    <main class="undermain__content">
+        <header class="header">
+            <h1 class="header__logo">Blog technologii webowych</h1>
+            <p class="header__logo--sentence"><br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
+            <!-- <p class="logo1">Witaj w świecie front endu!</p> -->
+            <nav class="header__nav">
+                <ul class="header__nav--menu">
+                    <li><a href="index.html" title="PRZEJDŹ DO" class="anim">Strona główna</a></li>
+                    <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">HTML</a></li>
+                    <li><a href="odpalamy.html" title="PRZEJDŹ DO" class="anim">CSS</a></li>
+                    <li><a href="teraz-java.html" title="PRZEJDŹ DO" class="anim">JavaScript</a></li>
+                    <li><a href="narzedzia.html" title="PRZEJDŹ DO" class="anim">Narzędzia</a></li>
+                    <li><a href="oautorze.html" title="PRZEJDŹ DO" class="anim">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <div class="topbar">
+            <img src="heart__beating.jpg" alt="heart beating">
+            </div>
 
+            <article class="underheadboard">
+                <section class="headboard__section--one">
+                    <h2 class="headboard__article--title">HTML 1.01</h2>
+
+                    <p class="headboard__article--header">Czym jest <span>HTML</span>?</p>
+
+                    <p class="article__content"><span>HTML</span> to skrót od <span>Hypertext Markup Language</span>.
+                Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
+                strony internetowej.<br />
+                <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
+                części kodu źródłowego. <br/>*semantyczny (HTML) – mający znaczenie i stąd opierający sie na
+                znacznikach;
+                </p>
+                <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z użyciem nawiasów
+                ostrych;
+                <br/> I tak wyróżniamy:
+                <br/> - znacznik pojedynczy <span>&lt; img /></span>
+                <br/> - znacznik podwójny <span>&lt; a> &lt; /a></span><br/>
+                <br/><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
+                postaci: <span>nazwa_atrybutu</span>=”wartość”</p>
+            
+                <!-- <div>
+                <img src="matrix3.jpg" alt="jakis-badziew-do-wymiany" height="300">
+                </div> -->
+                </section>
+                <section class="article__sum--up">O znacznikach raz jeszcze.&nbsp;<br />
+
+                <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                    /a>
+                </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić link; i tak:
+                <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
+                <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
+                zapiszemy:
+                <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                <span>></span>KLIKNIJ <span>&lt;/a></span>
+                <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br/>Koniecznie
+                należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
+                </span>chyba, że adres mieści się w Twojej własnej domenie;
+                <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
+                pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+                
+                </section>
+                    <span class="go-back"><a href="#header">Powrót do góry strony!</a></span>
+            </article>
+
+
+        <!-- <aside class="sidepanel">
+            <ul class="sidepanel__navigation">
+                <li>Tydzień 1</li>
+                <li>Tydzień 2</li>
+                <li>Tydzień 3</li>
+                <li>Tydzień 4</li>
+                <li>Tydzień 5</li>
+                <li>Tydzień 6</li>
+                <li>Tydzień 7</li>
             </ul>
 
-        </nav>
-
-    </header>
-
-    <main class="strona-glowna">
-        
-
-        <section>
-            <h2>Czym jest właściwie HTML?</h2>
-            <p>Nazwa HTML oznacza Hypertext Multiple Language... </p>
-        </section>
-
-        <section>
-            <h2>Notatki z WTF: co ten frond end</h2>
-            <article>
-                <h3>Jak stworzyć prawidłowego HTML-a?</h3>
-                <p>Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
-            </article>
-            <h2>Notatki z WTF: co ten frond end</h2>
-            <article>
-                <h3>Czym jest CSS?</h3>
-                <p>CSS – język służący do opisu formy prezentacji (wyświetlania) treści dokumentów (stron internetowych)
-                    w przeglądarce; wygląd-kolory-marginesy-tło/tła-kroje czcionki-itd…</p>
-            </article>
-            <article>
-                <h3>Czym sie chce zajmować?</h3>
-                Tworzeniem stron internetowych oraz ich administracją, tworzeniem filmów i relacji z odbytych
-                pielgrzymek, pokazywaniem miejsc kultu i ich historią. Organizowanie pielgrzymek morskich oraz
-                pielgrzymek Ignacjańskich.
-            </article>
-        </section>
-        <br />
-
+        </aside> -->
+        </div>
+        <!-- <div class="go-back"><a href="#header">Powrót do góry strony!</a> -->
+        </div> 
     </main>
-    
-    <footer id="footer">
-        Strona osobowa Krzysztofa Krzycha Przybylskiego. &Copywright 2020r. <a href="#header">Powrót!</a>
+
+    <footer class="footer">
+        Strona należy do Krzysztofa Krzycha Przybylskiego. &Copywright 2020r.  
     </footer>
 
+    <script src="main.js"></script>
 
 </body>
+
 
 </html>

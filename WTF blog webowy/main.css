@@ -3,7 +3,7 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: #fefefe;
         font-family:sans-serif;
-        font-size: 22px;
+        font-size: 20px;
         margin: auto;
         max-width: 1000px;
     }
@@ -46,33 +46,33 @@
         font-size: 18px;
         min-height: 40px;
         line-height: 200%;
+        vertical-align: middle;
+    }
+    .header__nav--menu a {
+        text-decoration: none;
+        color: #fefefe;
+        padding:0px;
+        margin:10px;
+        vertical-align: middle;
     }
     .header__nav--menu a:hover {
         background-color: white;
         color:rgb(40, 48, 72);
         border-radius: 5px;
         padding: 0px 2px;
+        margin:10px;
+        vertical-align: middle;
     }
-    
-    .header__nav--menu>li {
+    .header__nav--menu li {
         list-style-type: none;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 10px;
         border-right: 1px dashed #fff;
+        
     }
-    .header__nav--menu>li:first-child {
+    .header__nav--menu li:first-child {
         border-left: 1px dashed #fff;
     }
-    .header__nav--menu a {
-        text-decoration: none;
-        color: #fefefe;
-        padding: 1px;
-    }
-    .header__nav--menu a :hover {
-        color: #0a2b42;
-        background-color: white;
-        border-radius: 5px;
-    }
+    
     .topbar{
         display:flex;
         justify-content:center;
@@ -83,35 +83,50 @@
     .main__content{
         max-width: 1000px;
     }
+    .undermain__content{
+        max-width: 1000px;
+    }
     .headboard { 
-        height: 200px;
+        height: 100px;
         overflow:auto;
         border: 2px solid #0a2b42;
         border-radius: 5px;
         padding:10px;
         margin: 15px 0px;
     }
+    .underheadboard{
+        width: 900px;
+        margin-top:50px;
+    }
     .headboard__article--title {
         color: #0a2b42;
         font-size: 28px;
+        margin: 10px 0;
+    }
+    .headboard__article--title a {
+        color: #0a2b42;
+        font-size: 28px;
+        margin: 10px 0;
+        text-decoration: none;
     }
     .headboard__article--header{
-        font-size: 22px;
+        font-size: 20px;
+        margin: 10px 0;
     }
     span {
         color: #0a2b42;
         font-weight: 700;
-        font-size: 22px;
+        font-size: 20px;
     }
     p {
-        font-size: 22px;
+        font-size: 20px;
 
     }
     .article__content {
-        font-size: 22px;
+        font-size: 20px;
     }
     .article__sum--up {
-        font-size: 22px;
+        font-size: 20px;
     }
     
     
