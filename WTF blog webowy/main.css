@@ -11,8 +11,8 @@
         max-width: 1000px;
         margin: 0 auto auto 50px;
     }
-    .header{
-        margin: 0 auto auto 50px;
+    #header{
+        margin: auto;
     }
     .header__logo{
         font-size: 48px;
@@ -20,7 +20,9 @@
         text-transform: uppercase;
         display:flex;
         justify-content:center;
-        padding-top: 20px;
+        padding-top: 10px;
+        margin-top:15px;
+        margin-bottom: 0px;;
     }
     .header__logo--sentence{
         display:flex;
@@ -29,6 +31,8 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         padding-bottom: :10px;
+        font-size:22px;
+        margin-top: 0px;
     }
     .header__nav {
         display:flex;
@@ -41,17 +45,15 @@
     .header__nav--menu {
         display:flex;
         justify-content:center;
-        margin: 0px;
-        padding: 10px;
-        font-size: 18px;
+        margin: 5px 0;
+        padding: 5px;
+        font-size: 22px;
         min-height: 40px;
         line-height: 200%;
-        vertical-align: middle;
     }
     .header__nav--menu a {
         text-decoration: none;
         color: #fefefe;
-        padding:0px;
         margin:10px;
         vertical-align: middle;
     }
@@ -76,38 +78,76 @@
     .topbar{
         display:flex;
         justify-content:center;
-        margin: 10px 0px;
-        height: 200px;
+        margin: 20px auto;
+        max-height: 200px;
+        border-bottom: 2px dashed #0a2b42;
+        padding-top:15px;
+        padding-bottom: 25px;
     }
     
     .main__content{
         max-width: 1000px;
     }
-    .undermain__content{
-        max-width: 1000px;
+    .center{
+       display:flex;
     }
+    .sidepanel{
+        display:flex;
+        flex-direction:inline-block;
+    }
+    .sidepanel__navigation{
+        margin-left:40px;
+    }
+    .sidepanel__navigation a {
+        list-style-type: none;
+        font-size: 20px;
+        text-decoration: none;
+        color:white;
+        position:reletive;
+    }
+    .sidepanel__navigation a:hover {
+        list-style-type: none;
+        font-size: 20px;
+        text-decoration: none;
+        color:#0a2b42;
+        background-color: #fff;
+        font-weight: bold;
+    }
+
     .headboard { 
         height: 100px;
-        overflow:auto;
+        overflow:hidden;
         border: 2px solid #0a2b42;
         border-radius: 5px;
-        padding:10px;
-        margin: 15px 0px;
+        padding:10px;   
     }
-    .underheadboard{
-        width: 900px;
-        margin-top:50px;
+    .headboard__first { 
+        margin-top:35px;
+        height: 100px;
+        overflow:hidden;
+        border: 2px solid #0a2b42;
+        border-radius: 5px;
+        padding:10px;   
     }
-    .headboard__article--title {
-        color: #0a2b42;
-        font-size: 28px;
-        margin: 10px 0;
+    .underpage__headboard { 
+        margin:auto;
+        width: 800px;
+        display:block;
+        justify-content: flex-start;
+    }
+    h2{
+        color: #0a2b42;  
+        margin: auto;   
+    }
+    .headboard{
+        
+        margin-top:20px;
     }
     .headboard__article--title a {
         color: #0a2b42;
-        font-size: 28px;
+        font-size: 24px;
         margin: 10px 0;
-        text-decoration: none;
+        /* text-decoration: none; */
     }
     .headboard__article--header{
         font-size: 20px;
@@ -129,25 +169,21 @@
         font-size: 20px;
     }
     
-    
-
-
-    .sidepanel {
-        display: inline-block;
-        list-style-type: none;
+    .go-back {
+        display:flex;
+        justify-content: flex-end;
+        color: #fff;
         font-size: 24px;
-        list-style-type: none;
-        background-color: red;
-        
+        margin-top: 20px;
     }
-    
     .go-back a {
         display:flex;
         justify-content: flex-end;
         text-decoration: none;
-        color: #283048;
+        color: #fff;
         font-size: 24px;
         margin-top: 20px;
+        
     }
     .go-back a:hover{
         display:flex;
@@ -155,7 +191,7 @@
         color: #0a2b42;
         background-color: white;
         border-radius: 5px;
-        
+        font-weight: bold;
     }
     .footer {
         background-color: #283048;
@@ -164,3 +200,4 @@
         margin:15px auto;
         
     }
+  

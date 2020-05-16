@@ -13,29 +13,30 @@
 </head>
 
 <body>
-
+    <header id="header">
+        <h1 class="header__logo">Blog technologii webowych</h1>
+        <p class="header__logo--sentence"><br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
+        <!-- <p class="logo1">Witaj w świecie front endu!</p> -->
+        <nav class="header__nav">
+            <ul class="header__nav--menu">
+                <li><a href="index.html" title="PRZEJDŹ DO" class="anim">Strona główna</a></li>
+                <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">HTML</a></li>
+                <li><a href="odpalamyCSS.html" title="PRZEJDŹ DO" class="anim">CSS</a></li>
+                <li><a href="teraz-java.html" title="PRZEJDŹ DO" class="anim">JavaScript</a></li>
+                <li><a href="narzedzia.html" title="PRZEJDŹ DO" class="anim">Narzędzia</a></li>
+                <li><a href="oautorze.html" title="PRZEJDŹ DO" class="anim">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main class="main__content">
-        <header class="header">
-            <h1 class="header__logo">Blog technologii webowych</h1>
-            <p class="header__logo--sentence"><br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
-            <!-- <p class="logo1">Witaj w świecie front endu!</p> -->
-            <nav class="header__nav">
-                <ul class="header__nav--menu">
-                    <li><a href="index.html" title="PRZEJDŹ DO" class="anim">Strona główna</a></li>
-                    <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">HTML</a></li>
-                    <li><a href="odpalamy.html" title="PRZEJDŹ DO" class="anim">CSS</a></li>
-                    <li><a href="teraz-java.html" title="PRZEJDŹ DO" class="anim">JavaScript</a></li>
-                    <li><a href="narzedzia.html" title="PRZEJDŹ DO" class="anim">Narzędzia</a></li>
-                    <li><a href="oautorze.html" title="PRZEJDŹ DO" class="anim">About</a></li>
-                </ul>
-            </nav>
-        </header>
+        
         <div>
             <div class="topbar">
             <img src="heart__beating.jpg" alt="heart beating">
             </div>
 
-            <article class="headboard">
+            <article class="headboard__first">
                 <section class="headboard__section--one">
                     <h2 class="headboard__article--title"><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">HTML 1.01</a></h2>
 
@@ -138,7 +139,7 @@
                     <!-- <h2 class="headboard__article--title"><a href="odpalamy.html" title="PRZEJDŹ DO" class="anim">CSS 1.01</a></h2> -->
                     <h2 class="headboard__article--title"><a href="teraz-java.html" title="PRZEJDŹ DO" class="anim">JavaScript 1.01</a></h2>
 
-                    <p class="headboard__article--header">WTF is this<span>JS</span>?</p>
+                    <p class="headboard__article--header">WTF is this<span> JS</span>?</p>
 
                     <p class="article__content"><span>JS</span> to skrót od <span>J</span>ava<span>Script</span>.
                 Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
@@ -179,10 +180,9 @@
                 pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
                 
                 </section>
-                    <span class="go-back"><a href="#header">Powrót do góry strony!</a></span>
+                    <!-- <span class="go-back"><a href="#header__nav--menu">Powrót do góry strony!</a></span> -->
             </article>
-
-        <aside class="sidepanel">
+            <!-- <aside class="sidepanel">
             <ul class="sidepanel__navigation">
                 <li>Tydzień 1</li>
                 <li>Tydzień 2</li>
@@ -193,15 +193,17 @@
                 <li>Tydzień 7</li>
             </ul>
 
-        </aside>
-        </div>
         
+        </aside> -->
+        </div>
+
+        <div class="go-back"><a href="#header">Powrót do góry strony!</a></div>
+
     </main>
 
     <footer class="footer">
         Strona należy do Krzysztofa Krzycha Przybylskiego. &Copywright 2020r.
-        <div class="go__back--footer" ><a href="#topbar">Powrót do góry strony!</a>
-        </div>
+        
     </footer>
 
     <script src="main.js"></script>
