@@ -3,18 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- [if lt IE 9] -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <!-- [endif] -->
+
+
     <title>Frontend Post</title>
+
     <link rel="stylesheet" href="normalize.css " type="text/css">
     <link rel="stylesheet" href="main.css" type="text/css" />
+    <meta name="description" content="to jest opis mojej strony internetowej, jej całej zawartości">
+    <meta name="keywords" content="slowa klucze dla podniesienia pozycjonowania strony" />
+
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700&display=swap&subset=latin-ext"
         rel="stylesheet">
+
+    <!-- <script src="skrypt.js"></script> -->
+    <!-- JavaScript to przednami... -->
+
+    <meta name="author" content="Krzysztof Przybylski" />
+
 </head>
 
 <body onselectstart="return false" onselect="return false" oncopy="return false">
+
     <header id="header">
         <h1 class="header__logo">Blog technologii webowych</h1>
-        <p class="header__logo--sentence"><br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
+        <p id="header__logo--sentence"><br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
         <nav class="header__nav">
             <ul class="header__nav--menu">
                 <li><a href="index.html" title="PRZEJDŹ DO" class="anim">Strona główna</a></li>
@@ -25,80 +43,419 @@
                 <li><a href="oautorze.html" title="PRZEJDŹ DO" class="anim">About</a></li>
             </ul>
         </nav>
-    </header>
-
-
-    <main class="undermain__content">
-
+        
         <div class="topbar">
             <img src="assets/heart__beating.jpg" alt="heart beating">
         </div>
+    </header>
+
+    <main class="undermain__content">
+
 
         <div class="center">
+
+            <aside class="sidepanel">
+
+                <ul class="sidepanel__navigation">
+                    <li>
+                        <a href="#link__title--one" title="PRZEJDŹ DO" class="anim"><span>HTML 1.01</span></a>
+                    Czym jest HTML?
+                    </li>
+                    <li>
+                        <a href="#link__title--two" title="PRZEJDŹ DO" class="anim"><span>HTML 1.02</span></a>
+                        Bodowanie szablonu
+                    </li>
+                    <li><a href="#link__title--three" title="PRZEJDŹ DO" class="anim">HTML 1.03</a></li>
+                    <li><a href="#link__title--four" title="PRZEJDŹ DO" class="anim">HTML 1.04</a></li>
+                    <li><a href="#link__title--five" title="PRZEJDŹ DO" class="anim">HTML 1.05</a></li>
+                    <li><a href="#link__title--six" title="PRZEJDŹ DO" class="anim">HTML 1.06</a></li>
+                    <li><a href="#link__title--seven" title="PRZEJDŹ DO" class="anim">HTML 1.07</a></li>
+                </ul>
+
+            </aside>
+
+            <div class="article-center">
+                
+                <article class="under-article">
+
+                    <section class="section-one">
+
+                        <a id="link__title--one" href="HTML-index.html" title="PRZEJDŹ DO" class=anim>HTML 1.01</a>
+
+                        <h2 class="article-header">Czym jest <span>HTML</span>?</h2>
+
+                        <p class="article-content">
+                            <span>HTML</span> to skrót od <span>Hypertext Markup Language</span>.
+                            Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
+                            strony internetowej.<br />
+                            <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
+                            części kodu źródłowego. 
+                            <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie
+                            na znacznikach;
+                        </p>
+
+                        <p>
+                            <span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z
+                            użyciem
+                            nawiasów
+                            ostrych;
+                            <br /> I tak wyróżniamy:
+                            <br /> - znacznik pojedynczy <span>&lt; img /></span>
+                            <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
+                            <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
+                            postaci:
+                            <span>nazwa_atrybutu</span>=”wartość”<span>;</span>
+                        </p>
+
+                    </section>
+
+
+                    <section class="section-two">
+
+                        <h2 class="article-header">
+                            <span>Znacznik</span> zbudowany jest w następujący sposób:&nbsp;
+                        </h2>
+                        <p class="article-content">
+                        <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                        <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                            /a>
+                        </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić
+                        link;
+                        i tak:
+                        <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK<span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony onet.pl to zapiszemy:
+                        <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                        <span>></span>KLIKNIJ<span>&lt;/a></span>
+                        <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
+                        należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
+                        </span>chyba, że adres mieści się w Twojej własnej domenie;
+                        <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                        <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                        <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
+                        pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+                    </p>
+                    </section>
+
+                </article>
+
+
+
+                <article class="under-article">
+
+                    <section class="section-one">
+
+                        <a id="link__title--two" href="#header__logo--sentence" title="PRZEJDŹ DO" class=anim>HTML 1.02</a>
+
+                        <h2 class="article-header"><span>HTML</span> Budowanie szablonu strony</h2>
+
+                        <p class="article-content">
+                            <span>HTML</span> Kod źródłowy strony piszemy w edytorze tekstowym.<br /><br /><br />
+                            Popularne edytory VISUAL BASIC CODE<br />
+                            linki i odnośniki strony internetowej.<br />
+                            <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
+                            części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie
+                            naznacznikach;
+                        </p>
+
+                        <p>
+                            <span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z
+                            użyciem
+                            nawiasów
+                            ostrych;
+                            <br /> I tak wyróżniamy:
+                            <br /> - znacznik pojedynczy <span>&lt; img /></span>
+                            <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
+                            <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
+                            postaci:<span>nazwa_atrybutu</span>=”wartość”<span>;</span>
+                        </p>
+                    </section>
+
+
+                    <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
+
+                        <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                        <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                            /a>
+                        </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić
+                        link;
+                        i tak:
+                        <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
+                        <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
+                        zapiszemy:
+                        <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                        <span>></span>KLIKNIJ <span>&lt;/a></span>
+                        <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
+                        należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
+                        </span>chyba, że adres mieści się w Twojej własnej domenie;
+                        <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                        <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                        <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
+                        pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+
+                    </section>
+                </article>
+                <article class="under-article">
+
+                    <section class="section-one">
+
+                        <a id="link__title--three" href="#header__logo--sentence" title="PRZEJDŹ DO" class=anim>HTML 1.03</a>
+
+                        <h2 class="article-header"><span>HTML</span> Budowanie szablonu strony</h2>
+
+                        <p class="article-content"><span>HTML</span> Kod źródłowy strony piszemy w edytorze tekstowym.<br /><br /><br />
+                            Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
+                            strony internetowej.<br />
+                            <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
+                            części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie
+                            na
+                            znacznikach;</p>
+
+                        <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z
+                            użyciem
+                            nawiasów
+                            ostrych;
+                            <br /> I tak wyróżniamy:
+                            <br /> - znacznik pojedynczy <span>&lt; img /></span>
+                            <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
+                            <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
+                            postaci:
+                            <span>nazwa_atrybutu</span>=”wartość”<span>;</span></p>
+                    </section>
+
+
+                    <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
+
+                        <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                        <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                            /a>
+                        </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić
+                        link;
+                        i tak:
+                        <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
+                        <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
+                        zapiszemy:
+                        <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                        <span>></span>KLIKNIJ <span>&lt;/a></span>
+                        <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
+                        należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
+                        </span>chyba, że adres mieści się w Twojej własnej domenie;
+                        <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                        <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                        <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
+                        pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+
+                    </section>
+                </article>
+                <article class="under-article">
+
+                    <section class="section-one">
+
+                        <a id="link__title--four" href="#header__logo--sentence" title="PRZEJDŹ DO" class=anim>HTML 1.04</a>
+
+                        <h2 class="article-header"><span>HTML</span> Budowanie szablonu strony</h2>
+
+                        <p class="article-content"><span>HTML</span> Kod źródłowy strony piszemy w edytorze tekstowym.<br /><br /><br />
+                            Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
+                            strony internetowej.<br />
+                            <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
+                            części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie
+                            na
+                            znacznikach;</p>
+
+                        <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z
+                            użyciem
+                            nawiasów
+                            ostrych;
+                            <br /> I tak wyróżniamy:
+                            <br /> - znacznik pojedynczy <span>&lt; img /></span>
+                            <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
+                            <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
+                            postaci:
+                            <span>nazwa_atrybutu</span>=”wartość”<span>;</span></p>
+                    </section>
+
+
+                    <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
+
+                        <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                        <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                            /a>
+                        </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić
+                        link;
+                        i tak:
+                        <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
+                        <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
+                        zapiszemy:
+                        <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                        <span>></span>KLIKNIJ <span>&lt;/a></span>
+                        <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
+                        należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
+                        </span>chyba, że adres mieści się w Twojej własnej domenie;
+                        <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                        <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                        <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
+                        pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+
+                    </section>
+                </article>
+                <article class="under-article">
+
+                    <section class="section-one">
+
+                        <a id="link__title--five" href="#header__logo--sentence" title="PRZEJDŹ DO" class=anim>HTML 1.05</a>
+
+                        <h2 class="article-header"><span>HTML</span> Budowanie szablonu strony</h2>
+
+                        <p class="article-content"><span>HTML</span> Kod źródłowy strony piszemy w edytorze tekstowym.<br /><br /><br />
+                            Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
+                            strony internetowej.<br />
+                            <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
+                            części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie
+                            na
+                            znacznikach;</p>
+
+                        <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z
+                            użyciem
+                            nawiasów
+                            ostrych;
+                            <br /> I tak wyróżniamy:
+                            <br /> - znacznik pojedynczy <span>&lt; img /></span>
+                            <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
+                            <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
+                            postaci:
+                            <span>nazwa_atrybutu</span>=”wartość”<span>;</span></p>
+                    </section>
+
+
+                    <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
+
+                        <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                        <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                            /a>
+                        </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić
+                        link;
+                        i tak:
+                        <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
+                        <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
+                        zapiszemy:
+                        <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                        <span>></span>KLIKNIJ <span>&lt;/a></span>
+                        <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
+                        należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
+                        </span>chyba, że adres mieści się w Twojej własnej domenie;
+                        <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                        <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                        <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
+                        pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+
+                    </section>
+                </article>
+                <article class="under-article">
+
+                    <section class="section-one">
+
+                        <a id="link__title--six" href="#header__logo--sentence" title="PRZEJDŹ DO" class=anim>HTML 1.06</a>
+
+                        <h2 class="article-header"><span>HTML</span> Budowanie szablonu strony</h2>
+
+                        <p class="article-content"><span>HTML</span> Kod źródłowy strony piszemy w edytorze tekstowym.<br /><br /><br />
+                            Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
+                            strony internetowej.<br />
+                            <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
+                            części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie
+                            na
+                            znacznikach;</p>
+
+                        <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z
+                            użyciem
+                            nawiasów
+                            ostrych;
+                            <br /> I tak wyróżniamy:
+                            <br /> - znacznik pojedynczy <span>&lt; img /></span>
+                            <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
+                            <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
+                            postaci:
+                            <span>nazwa_atrybutu</span>=”wartość”<span>;</span></p>
+                    </section>
+
+
+                    <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
+
+                        <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                        <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                            /a>
+                        </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić
+                        link;
+                        i tak:
+                        <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
+                        <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
+                        zapiszemy:
+                        <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                        <span>></span>KLIKNIJ <span>&lt;/a></span>
+                        <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
+                        należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
+                        </span>chyba, że adres mieści się w Twojej własnej domenie;
+                        <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                        <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                        <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
+                        pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+
+                    </section>
+                </article>
+                <article class="under-article">
+
+                    <section class="section-one">
+
+                        <a id="link__title--seven" href="#header__logo--sentence" title="PRZEJDŹ DO" class=anim>HTML 1.07</a>
+
+                        <h2 class="article-header"><span>HTML</span> Budowanie szablonu strony</h2>
+
+                        <p class="article-content"><span>HTML</span> Kod źródłowy strony piszemy w edytorze tekstowym.<br /><br /><br />
+                            Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
+                            strony internetowej.<br />
+                            <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
+                            części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie
+                            na
+                            znacznikach;</p>
+
+                        <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z
+                            użyciem
+                            nawiasów
+                            ostrych;
+                            <br /> I tak wyróżniamy:
+                            <br /> - znacznik pojedynczy <span>&lt; img /></span>
+                            <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
+                            <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
+                            postaci:
+                            <span>nazwa_atrybutu</span>=”wartość”<span>;</span></p>
+                    </section>
+
+
+                    <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
+
+                        <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
+                        <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
+                            /a>
+                        </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić
+                        link;
+                        i tak:
+                        <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
+                        <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
+                        zapiszemy:
+                        <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
+                        <span>></span>KLIKNIJ <span>&lt;/a></span>
+                        <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
+                        należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
+                        </span>chyba, że adres mieści się w Twojej własnej domenie;
+                        <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
+                        <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
+                        <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
+                        pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+
+                    </section>
+                </article>
+            </div>
             
-        <article class="under-article">
-
-            <section class="section-one">
-
-                <a class="link-title" href="HTML-index.html"  title="PRZEJDŹ DO" class=anim>HTML 1.01</a>
-
-                <h2 class="article-header">Czym jest <span>HTML</span>?</h2>
-
-                <p class="article-content"><span>HTML</span> to skrót od <span>Hypertext Markup Language</span>.
-                    Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
-                    strony internetowej.<br />
-                    <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
-                    części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie na
-                    znacznikach;</p>
-
-                <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z użyciem
-                    nawiasów
-                    ostrych;
-                    <br /> I tak wyróżniamy:
-                    <br /> - znacznik pojedynczy <span>&lt; img /></span>
-                    <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
-                    <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w postaci:
-                    <span>nazwa_atrybutu</span>=”wartość”<span>;</span></p>
-                 </section>
-
-
-            <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
-
-                <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
-                <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
-                    /a>
-                </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić link;
-                i tak:
-                <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
-                <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
-                zapiszemy:
-                <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
-                <span>></span>KLIKNIJ <span>&lt;/a></span>
-                <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
-                należy pamiętać o umieszczeniu pełnego adresu strony, włącznie z protokołem <span> http://
-                </span>chyba, że adres mieści się w Twojej własnej domenie;
-                <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
-                <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
-                <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
-                pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
-
-            </section>
-        </article>
-
-
-        <aside class="sidepanel">
-            <ul class="sidepanel__navigation">
-                <li><a href="#header" title="PRZEJDŹ DO" class="anim">HTML 1.01</a></li>
-                <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">Tydzień 2</a></li>
-                <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">Tydzień 3</a></li>
-                <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">Tydzień 4</a></li>
-                <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">Tydzień 5</a></li>
-                <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">Tydzień 6</a></li>
-                <li><a href="HTML-index.html" title="PRZEJDŹ DO" class="anim">Tydzień 7</a></li>
-            </ul>
-
-        </aside>
-    </div>
+        </div>
 
 
         <div class="go-back"><a href="#header">Powrót do góry strony!</a></div>
