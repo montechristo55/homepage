@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Co ten frontend Post</title>
+    <title>Frontend Post</title>
+    <link rel="stylesheet" href="normalize.css " type="text/css">
     <link rel="stylesheet" href="main.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-
 </head>
 
-<body>
+<body onselectstart="return false" onselect="return false" oncopy="return false">
     <header id="header">
         <h1 class="header__logo">Blog technologii webowych</h1>
         <p class="header__logo--sentence"><br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
-        <!-- <p class="logo1">Witaj w świecie front endu!</p> -->
         <nav class="header__nav">
             <ul class="header__nav--menu">
                 <li><a href="index.html" title="PRZEJDŹ DO" class="anim">Strona główna</a></li>
@@ -30,25 +29,28 @@
 
 
     <main class="undermain__content">
+
         <div class="topbar">
-            <img src="heart__beating.jpg" alt="heart beating">
+            <img src="assets/heart__beating.jpg" alt="heart beating">
         </div>
+
         <div class="center">
-        
+            
+        <article class="under-article">
 
-        <article class="underpage__headboard">
-            <section class="headboard__section--one">
-                <h2 class="headboard__article--title">HTML 1.01</h2>
+            <section class="section-one">
 
-                <p class="headboard__article--header">Czym jest <span>HTML</span>?</p>
+                <a class="link-title" href="HTML-index.html"  title="PRZEJDŹ DO" class=anim>HTML 1.01</a>
 
-                <p class="article__content"><span>HTML</span> to skrót od <span>Hypertext Markup Language</span>.
+                <h2 class="article-header">Czym jest <span>HTML</span>?</h2>
+
+                <p class="article-content"><span>HTML</span> to skrót od <span>Hypertext Markup Language</span>.
                     Jest to nic innego jak jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
                     strony internetowej.<br />
                     <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
                     części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie na
-                    znacznikach;
-                </p>
+                    znacznikach;</p>
+
                 <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z użyciem
                     nawiasów
                     ostrych;
@@ -57,11 +59,10 @@
                     <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
                     <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w postaci:
                     <span>nazwa_atrybutu</span>=”wartość”<span>;</span></p>
+                 </section>
 
-            </section>
 
-
-            <section class="article__sum--up">O znacznikach raz jeszcze.&nbsp;<br />
+            <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
 
                 <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
                 <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
@@ -82,8 +83,9 @@
                 pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
 
             </section>
-
         </article>
+
+
         <aside class="sidepanel">
             <ul class="sidepanel__navigation">
                 <li><a href="#header" title="PRZEJDŹ DO" class="anim">HTML 1.01</a></li>
