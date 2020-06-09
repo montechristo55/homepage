@@ -43,9 +43,9 @@ const greet = (age, firstName ) => {
 
 // Podmienianie treści w html-u!!!
 
-function createContent(querySelectorContent, content) {
-    const element = document.querySelector(querySelectorContent);
-    element.innerHTML = content;
-}
+// function createContent(querySelectorContent, content) {
+//     const element = document.querySelector(querySelectorContent);
+//     element.innerHTML = content;
+// }
 
-createContent(`.header__logo--sentence`, `Bóg Honor Ojczyzna`);
+// createContent(`.header__logo--sentence`, `Bóg Honor Ojczyzna`);

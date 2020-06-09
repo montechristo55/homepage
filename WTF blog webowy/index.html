@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- [if lt IE 9] --> 
+    <!-- [if lt IE 9] -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <!-- [endif] -->
 
@@ -27,10 +27,10 @@
 </head>
 
 <body onselectstart="return false" onselect="return false" oncopy="return false">
-    
+
     <header id="header">
         <h1 class="header__logo">Blog technologii webowych</h1>
-        <p class="header__logo--sentence"><br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
+        <p id="header__logo--sentence"><br />Wiedza-rozumienie-zastosowanie-analiza-synteza-ocenianie</p>
         <!-- <p class="logo1">Witaj w świecie front endu!</p> -->
         <nav class="header__nav">
             <ul class="header__nav--menu">
@@ -107,7 +107,6 @@
 
         </article>
 
-
         <article class="article">
             <section class="section-one">
                 <a class="link-title" href="odpalamyCSS.html" title="PRZEJDŹ DO" class=anim>CSS 1.01</a>
@@ -115,40 +114,34 @@
                 <h2 class="article-header">Czym jest <span>CSS</span>?</h2>
 
                 <p class="article-content"><span>CSS</span> to skrót od <span>C</span>ascading <span>S</span>tyle
-                    <span>S</span>heet co znaczy <i>kaskadowe style arkuszy</i>. CSS to jezyk służący do opisu formy prezentacji (wyświetlania) treści dokumentów (stron internetowych) w przeglądarce; wygląd-kolory-marginesy-tło/tła-kroje czcionki-itd…
+                    <span>S</span>heet co znaczy <i>kaskadowe style arkuszy</i>. CSS to jezyk służący do opisu formy
+                    prezentacji (wyświetlania) treści dokumentów (stron internetowych) w przeglądarce;
+                    wygląd-kolory-marginesy-tło/tła-kroje czcionki-itd…
                     <br />
 
                     Jak działa CSS w praktyce? CSS jest to kod wewnątrz pliku, który składa się z sekcji:
-                        selector {
-                        	property:value;
-                        	property:value;
-                        	property:value;
-                        }
-                        *selector – wybrany element strony, którego cechy opisujemy pomiędzy klamrami;
+                    selector {
+                    property:value;
+                    property:value;
+                    property:value;
+                    }
+                    *selector – wybrany element strony, którego cechy opisujemy pomiędzy klamrami;
 
-                        Przykładowa stylizacja nagłówka mogłaby wyglądać następująco:
+                    Przykładowa stylizacja nagłówka mogłaby wyglądać następująco:
 
-                        h1 {							    h1 – nagłówek;
-                        color: blue;						color: kolor elementów wew;
-                        font-size: 36px;					rozmiar czcionki;
-                        font-weight: bold;				    grubośc czcionki;
-                        text-align: center;				    umiejscowienie tekstu;
-                        text-transform: uppercase;			zamiana liter na wielkie;
-                        letter-spacing: 5px;				rozsztrzelenie tekstu;
-                        }
-
-                    <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
-                    części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie na
-                    znacznikach;
+                    h1 { h1 – nagłówek;
+                    color: blue; color: kolor elementów wew;
+                    font-size: 36px; rozmiar czcionki;
+                    font-weight: bold; grubośc czcionki;
+                    text-align: center; umiejscowienie tekstu;
+                    text-transform: uppercase; zamiana liter na wielkie;
+                    letter-spacing: 5px; rozsztrzelenie tekstu;
+                    }
                 </p>
-                <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z użyciem
-                    nawiasów
-                    ostrych;
-                    <br /> I tak wyróżniamy:
-                    <br /> - znacznik pojedynczy <span>&lt; img /></span>
-                    <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
-                    <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
-                    postaci: <span>nazwa_atrybutu</span>=”wartość”</p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quidem recusandae optio consequuntur cupiditate eos beatae illum voluptatum corrupti reiciendis. Velit minus, deleniti eveniet debitis ratione hic unde quam assumenda!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quidem recusandae optio consequuntur cupiditate eos beatae illum voluptatum corrupti reiciendis. Velit minus, deleniti eveniet debitis ratione hic unde quam assumenda!
+                </p>
 
                 <!-- <div>
                 <img src="matrix3.jpg" alt="jakis-badziew-do-wymiany" height="300">
@@ -156,23 +149,10 @@
             </section>
             <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
 
-                <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
-                <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
-                    /a>
-                </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić link; i
-                tak:
-                <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
-                <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
-                zapiszemy:
-                <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
-                <span>></span>KLIKNIJ <span>&lt;/a></span>
-                <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
-                trzeba pamiętać o umieszczeniu pełnego adresu, włącznie z protokołem <span> http://
-                </span>chyba, że adres mieści się w Twojej własnej domenie;
-                <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
-                <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
-                <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
-                pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, temporibus. Earum quas optio itaque voluptas odit id, assumenda ratione ab enim perspiciatis quasi impedit minima suscipit praesentium doloribus laboriosam voluptatibus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, temporibus. Earum quas optio itaque voluptas odit id, assumenda ratione ab enim perspiciatis quasi impedit minima suscipit praesentium doloribus laboriosam voluptatibus.
+                </p>
 
             </section>
             <!-- <span class="go-back"><a href="#header">Powrót do góry strony!</a></span> -->
@@ -187,61 +167,34 @@
                 <h2 class="article-header">WTF is this<span> JS</span>?</h2>
 
                 <p class="article-content"><span>JS</span> to skrót od <span>J</span>ava<span>Script</span>.
-                    Jest to jezyk opisowy oparty na tzw. znacznikach (tagach) opisujacy zawartość
-                    strony internetowej.<br />
-                    <span>SEMANTYCZNY HTML</span> oznacza precyzyjne definiowanie przeznaczenia poszczególnych
-                    części kodu źródłowego. <br />*semantyczny (HTML) – mający znaczenie i stąd opierający sie na
-                    znacznikach;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque laborum pariatur, enim,
+                    hic quam tempore quasi, itaque eligendi aliquam error eos explicabo iste reprehenderit modi earum
+                    doloribus. Sunt, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    doloremque laborum pariatur, enim, hic quam tempore quasi, itaque eligendi aliquam error eos
+                    explicabo iste reprehenderit modi earum doloribus. Sunt, exercitationem.
                 </p>
-                <p><span>Znacznik (tag)</span> to element składowy dokumentu HTML, który jest zapisywany z użyciem
-                    nawiasów
-                    ostrych;
-                    <br /> I tak wyróżniamy:
-                    <br /> - znacznik pojedynczy <span>&lt; img /></span>
-                    <br /> - znacznik podwójny <span>&lt; a> &lt; /a></span><br />
-                    <br /><span>Atrybut</span> to cecha (właściwość) znacznika, zdefiniowana w jego wnętrzu, w
-                    postaci: <span>nazwa_atrybutu</span>=”wartość”</p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum eveniet nisi, illum porro quibusdam
+                    voluptatum consequatur aut? Dolor earum corrupti ab odit recusandae fugiat soluta assumenda maiores,
+                    minus magni id?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum eveniet nisi, illum porro quibusdam
+                    voluptatum consequatur aut? Dolor earum corrupti ab odit recusandae fugiat soluta assumenda maiores,
+                    minus magni id?
+                </p>
 
                 <!-- <div>
                 <img src="matrix3.jpg" alt="jakis-badziew-do-wymiany" height="300">
                 </div> -->
             </section>
             <section class="section-two">O znacznikach raz jeszcze.&nbsp;<br />
-
-                <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
-                <span>&lt;/znacznik></span><br />Znacznik definiujący hiperłącze (link) to <span>&lt; a> &lt;
-                    /a>
-                </span>natomiast href to adres strony (od <i>hyper text reference</i>), do której ma prowadzić link; i
-                tak:
-                <span>&lt;a</span> href=”adres-strony.pl”<span>></span>LINK
-                <span>&lt;/a></span> A wiec przykładowo jeżeli chcemy umieścić link do strony .pl to
-                zapiszemy:
-                <br /> <span>&lt; a</span> href=”http://onet.pl” target=”_blank” title=”hint”
-                <span>></span>KLIKNIJ <span>&lt;/a></span>
-                <br />*na ekranie widać odnośnik KLIKNIJ, który jest linkiem do strony onet.pl; <br />Koniecznie
-                trzeba pamiętać o umieszczeniu pełnego adresu, włącznie z protokołem <span> http://
-                </span>chyba, że adres mieści się w Twojej własnej domenie;
-                <span>target=_blank</span>spowoduje, iż łącze otworzy się na nowej stronie; natomiast znacznik
-                <span>title=”hint”</span> utworzy napis przy kursorze po najechaniu na link, tzw. hint;
-                <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy znaczniki
-                pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
-
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni reiciendis, ab a voluptatem repudiandae odit quae eaque? Eaque debitis unde nisi necessitatibus ea fugit impedit qui, dignissimos dolore tenetur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni reiciendis, ab a voluptatem repudiandae odit quae eaque? Eaque debitis unde nisi necessitatibus ea fugit impedit qui, dignissimos dolore tenetur.
+                </p>
             </section>
             <!-- <span class="go-back"><a href="#header__nav--menu">Powrót do góry strony!</a></span> -->
         </article>
-        <!-- <aside class="sidepanel">
-            <ul class="sidepanel__navigation">
-                <li>Tydzień 1</li>
-                <li>Tydzień 2</li>
-                <li>Tydzień 3</li>
-                <li>Tydzień 4</li>
-                <li>Tydzień 5</li>
-                <li>Tydzień 6</li>
-                <li>Tydzień 7</li>
-            </ul>
-
         
-        </aside> -->
         </div>
 
         <!-- <div class="go-back"><a href="#header">Powrót do góry strony!</a></div> -->

@@ -66,16 +66,6 @@
     .header__nav--menu li:first-child {
         border-left: 1px dashed #fff;
     }
-
-    .main__content {
-        max-width: 1000px; 
-        margin: 0 auto;
-    }
-    .undermain__content{
-        max-width: 1000px;
-        margin: 0px auto;
-        
-    }
     /*GRAFIKA */
     .topbar{
         display:flex;
@@ -86,14 +76,28 @@
         padding-top:5px;
         padding-bottom: 25px;
     }
+
+    .main__content {
+        max-width: 1000px; 
+        margin: 0 auto;
+    }
+    .undermain__content{
+        max-width: 1000px;
+        margin: 0px auto; 
+        display: flex;   
+    }
     .center{
         margin: 20px auto;
         width: 1000px;
-        display:flex;
      }
-     /* .article-center{
-        
-     } */
+     .sidepanel__navigation > li > a {
+        color: #0a2b42;
+        font-weight: 700;
+        font-size: 20px;  
+     }
+     .article-center{
+        display:flex
+     }
     .article { 
         margin-top:30px;
         max-height: 95px;
@@ -107,8 +111,7 @@
         border: 2px solid #0a2b42;
         border-radius: 5px;
         padding:18px;   
-        /* min-width: 700px; */
-        /* display: flex; */
+        min-width: 700px;
     }
     /* KAŻDY a W KAŻDYM section-one!!!  */
     .section-one > a {
@@ -153,7 +156,6 @@
         border-radius: 5px;
         padding:10px;   
     }
-   
     /* .headboard{
         margin-top:20px;
     }
@@ -166,30 +168,31 @@
         font-weight: 700;
         font-size: 20px;
     }
-   
     p {
         font-size: 20px;
-
     }
-    
     .article__sum--up {
         font-size: 20px;
     }
-    
+    .back{
+        display:flex;
+    }
     .go-back {
         display:flex;
-        justify-content: flex-end;
-        position: fixed;
-        bottom: 55px;
-        right:55px;
+        justify-content: center;
+        align-items: bottom;
+        /* position: fixed; */
+        /* bottom: 55px; */
+        /* right:55px; */
         width: 150px;
         color: #fff;
         font-size: 24px;
         margin-top: 20px;
     }
-    .go-back a {
+    .go-back > a {
         display:flex;
         justify-content: flex-end;
+        align-items: baseline;
         text-decoration: none;
         color: #fff;
         font-size: 24px;
@@ -197,7 +200,8 @@
     }
     .go-back a:hover{
         display:flex;
-        justify-content: flex-end;
+        justify-content: bottom;
+        align-items: bottom;
         color: #0a2b42;
         background-color: white;
         border-radius: 5px;
