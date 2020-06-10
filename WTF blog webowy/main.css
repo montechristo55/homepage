@@ -163,6 +163,12 @@
         font-size: 20px;
         margin: 10px 0;
     } */
+    .odnosniki{
+        list-style: none;
+    }
+    .ul{
+        list-style: none;
+    }
     span {
         color: #0a2b42;
         font-weight: 700;

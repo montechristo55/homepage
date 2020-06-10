@@ -139,17 +139,17 @@
                             <br />Reasumując...<span>HTML</span> to język opisany za pomocą znaczników. Wyróżniamy
                             znaczniki
                             pojedyncze i podwójne. Znacznikom przypisywane są atrybuty, a tym konkretne wartości.
-                            <br/>
+                            <br />
 
                         </p>
 
 
                         <div class="back">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/k2IydkL3EOs?start=1"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                           
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
                         </div>
             </div>
             <!-- <div class="go-back">
@@ -170,30 +170,41 @@
 
                     <a id="link__title--two" href="HTML-index.html" title="PRZEJDŹ DO" class=anim>HTML 1.02</a>
 
-                    <h2 class="article-header">Czym jest <span>HTML</span>?</h2>
+                    <h2 class="article-header">Formatowanie tekstu w kodzie. Odnośniki i znaczniki w <span>HTML</span>.
+                    </h2>
 
                     <p class="article-content">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio voluptatem non, quaerat
-                        ullam sed nisi? Atque nesciunt ratione veritatis hic reiciendis fugiat at voluptatum impedit
-                        esse molestiae, sed ex?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio voluptatem non, quaerat
-                        ullam sed nisi? Atque nesciunt ratione veritatis hic reiciendis fugiat at voluptatum impedit
-                        esse molestiae, sed ex?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio voluptatem non, quaerat
-                        ullam sed nisi? Atque nesciunt ratione veritatis hic reiciendis fugiat at voluptatum impedit
-                        esse molestiae, sed ex?
+                        Jeżeli chcemy umieścić treść na naszej stronie internetowej czy blogu musimy ten tekst
+                        sformatować (w HTML-u) i dalej wystylizować (w CSS-ie).
+                        Tekst, który wprowadzimy do kodu HTML nie będzie wyglądał tak samo na naszej stronie. Do tego
+                        używamy znaczników. Jeżeli chcemy rozpocząć zdanie od nowej linijki należy użyć znacznika <span>
+                            < /br>
+                        </span>. Jeżeli chcemy wybrany fragment tekstu pogrubić użyjemy <span>
+                            < b>
+                                < /b>
+                        </span>, a więc <span><b>bold</b></span>. Jeżeli chcemy wprowadzić tekst pochylony użyjemy
+                        <span>
+                            < i>
+                                < /i>
+                        </span> co znaczy <span><i>italic</i></span>. Identyczne dla oka funkcje spełniają znaczniki
+                        odpowiednio <span>
+                            < strong>
+                                < /strong>
+                        </span> oraz <span>
+                            < em>
+                                < /em>
+                        </span>. Różnica polega na tym, że te drugie mają również znaczenie semantyczne dla czytników
+                        stron.
+                        Jezeli chcemy podkreslić dany fragment tekstu użyjemy znacznika <span>
+                            < u>
+                        </span>co znaczy <u>underline</u>.
+
+
+
                     </p>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illum cumque dolorem incidunt
-                        odio quam vel velit eveniet perspiciatis dolore ut sint, ex nesciunt iusto odit doloribus
-                        laudantium magnam! Omnis?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illum cumque dolorem incidunt
-                        odio quam vel velit eveniet perspiciatis dolore ut sint, ex nesciunt iusto odit doloribus
-                        laudantium magnam! Omnis?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illum cumque dolorem incidunt
-                        odio quam vel velit eveniet perspiciatis dolore ut sint, ex nesciunt iusto odit doloribus
-                        laudantium magnam! Omnis?
+
                     </p>
 
                 </section>
@@ -203,53 +214,233 @@
                     <p class="article-content">
 
                     <h2 class="article-header">
-                        <span>Znacznik</span> zbudowany jest w następujący sposób:&nbsp;
+                        <span>Odnosniki</span>: poczta i podstrona.&nbsp;
                     </h2>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quam id ullam, iste earum ipsam
-                        laudantium cum quas corporis laboriosam quae odio magni quos autem iure aperiam porro dolorem
-                        est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quam id ullam, iste earum
-                        ipsam laudantium cum quas corporis laboriosam quae odio magni quos autem iure aperiam porro
-                        dolorem est.
+                    <p>
+                        Bardzo często, przeważnie w stopce strony, umieszczamy pole kontaktu z autorem czy to bloga czy
+                        strony internetowej. Jak będzie wyglądał taki odnośnik? I tu drobna uwaga. Nie ma sie co łudzić,
+                        że adres zapisany na zasadzie imie.nazwisko_at_nazwadomeny.pl bedzie niewidzialny dla robotów.
+                        One pobierają adres z kodu HTML. Z drugiej strony przeróżne instytucje, jak np. banki poprostu
+                        sprzedają nasze adresy poczty.
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, fuga ea facilis veniam eos
-                        laboriosam optio accusantium qui cumque nemo porro maxime earum vero provident maiores suscipit
-                        nisi eum voluptas!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, fuga ea
-                        facilis veniam eos laboriosam optio accusantium qui cumque nemo porro maxime earum vero
-                        provident maiores suscipit nisi eum voluptas!
+
+                    <p>
+                    <ul>Odnośniki:
+                        <li>
+                            <span>o adresie bezwzględnym:</span></br>
+                            < a href="https://www.google.pl">Przejdź do googla< /a>
+                        </li>
+                        <li>
+                            <span>o adresie względnym:</span></br>
+                            < a href="galeria.html">Przejdż do galerii</a>
+                        </li>
+                        <li>
+                            <span>odnośnik do poczty:</span></br>
+                            Napisz do mnie: < a href="mailto:imie.nazwisko@gmail.com">imie.nazwisko@gmail.com< /a>
+                        </li>
+                        <p>
+                            Nie należy umieszczać na stronie odnośnika pt. Napisz do mnie w miejsce adresu poczty.
+                            Będzie on poprostu przekierowywał do nieskonfigurowej przeglądarki poczty elektronicznej.
+                        </p>
+                    </ul>
                     </p>
                 </section>
-
             </article>
+
             <!-- KOLEJNY SLAJD!!! -->
-            <!-- KOLEJNY SLAJD!!! -->
-            <!-- KOLEJNY SLAJD!!! -->
-            <!-- KOLEJNY SLAJD!!! -->
+
             <article class="under-article">
 
                 <section class="section-one">
 
                     <a id="link__title--four" href="HTML-index.html" title="PRZEJDŹ DO" class=anim>HTML 1.03</a>
 
-                    <h2 class="article-header">Czym jest <span>HTML</span>?</h2>
+                    <h2 class="article-header">Listy i tabele w <span>HTML</span>.</h2>
 
                     <p class="article-content">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic temporibus, cum architecto quia
-                        possimus at ex et ipsam quod ipsa aut atque? Optio architecto molestiae ea animi cupiditate
-                        tempora in!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic temporibus, cum architecto quia
-                        possimus at ex et ipsam quod ipsa aut atque? Optio architecto molestiae ea animi cupiditate
-                        tempora in!
-                    </p>
+                        Rozróżniamy dwa rodzaje list: ordered list <span>
+                            < ol>
+                                < /ol>
+                        </span>czyli listy numerowane/uszeregowane w kolejności oraz undordered list<span>
+                            < ul>
+                                < /ul>
+                        </span> czyli listy nienumerowane. </br>
+                        Zapis listy nienumerowanej wygląda następująco:
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, et. Doloribus quae eveniet
-                        minima quam amet recusandae veritatis tempore hic adipisci iste voluptas praesentium quis,
-                        deleniti dolores qui modi doloremque!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, et. Doloribus quae eveniet
-                        minima quam amet recusandae veritatis tempore hic adipisci iste voluptas praesentium quis,
-                        deleniti dolores qui modi doloremque!
-                    </p>
+                    <ul class="ul"><span>
+                            < ul>
+                        </span>
+                        <li>
+                            &nbsp; <span>
+                                < li>
+                            </span>Punkt 1<span>
+                                < /li>
+                            </span>
+                        </li>
+                        <li>
+                            &nbsp; < li> Punkt 2 < /li>
+                        </li>
+                        <li>
+                            &nbsp; <span>
+                                < li>
+                            </span>Punkt 3<span>
+                                < /li>
+                            </span>
+                        </li>
+                        <li>
+                            &nbsp; < li> Punkt 4 < /li>
+                        </li>
+                        <li>
+                            &nbsp; <span>
+                                < li>
+                            </span> Punkt 5<span>
+                                < /li>
+                            </span>
+                        </li>
+                        <span>
+                            < /ul>
+                        </span>
+                    </ul>
+                    Na stronie zobaczymy listę w kształcie:
+                    <ul>
+                        <li>Punkt 1</li>
+                        <li>Punkt 2</li>
+                        <li>Punkt 3</li>
+                        <li>Punkt 4</li>
+                        <li>Punkt 5</li>
+                    </ul>
+                    Zapis listy numerowanej będzie wyglądał analogicznie. Zmienimy jedynie znacznik < ul>
+                        < /ul> na < ol>
+                                < /ol>:
+
+                                    <ol class="ul"><span>
+                                            < ol>
+                                        </span>
+                                        <li>
+                                            &nbsp; <span>
+                                                < li>
+                                            </span>Punkt 1<span>
+                                                < /li>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            &nbsp; < li> Punkt 2 < /li>
+                                        </li>
+                                        <li>
+                                            &nbsp; <span>
+                                                < li>
+                                            </span>Punkt 3<span>
+                                                < /li>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            &nbsp; < li> Punkt 4 < /li>
+                                        </li>
+                                        <li>
+                                            &nbsp; <span>
+                                                < li>
+                                            </span>Punkt 5<span>
+                                                < /li>
+                                            </span>
+                                        </li>
+                                        <span>
+                                            < /ol>
+                                        </span>
+                                    </ol>
+
+                                    A w rezultacie:
+
+                                    <ol>
+                                        <li>Punkt 1</li>
+                                        <li>Punkt 2</li>
+                                        <li>Punkt 3</li>
+                                        <li>Punkt 4</li>
+                                        <li>Punkt 5</li>
+                                    </ol>
+
+                                    </p>
+
+                                    <p>
+                                        Niekiedy listy zagnieżdżamy, tzn umieszczamy listy wew list, tzn:
+                                    <ul class="ul"><span>
+                                            < ul>
+                                        </span>
+                                        <li>
+                                            &nbsp; <span>
+                                                < li>
+                                            </span>Punkt 1<span>
+                                                < /li>
+                                            </span>
+                                            <ol class="ul"><span>
+                                                    < ol>
+                                                </span>
+                                                <li>
+                                                    &nbsp; <span>
+                                                        < li>
+                                                    </span>Punkt 1<span>
+                                                        < /li>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    &nbsp; < li> Punkt 2 < /li>
+                                                </li>
+                                                <li>
+                                                    &nbsp; <span>
+                                                        < li>
+                                                    </span>Punkt 3<span>
+                                                        < /li>
+                                                    </span>
+                                                </li>
+                                                <span>
+                                                    < /ol>
+                                                </span>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            &nbsp; < li> Punkt 2 < /li>
+
+                                        </li>
+                                        <li>
+                                            &nbsp; <span>
+                                                < li>
+                                            </span>Punkt 3<span>
+                                                < /li>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            &nbsp; < li> Punkt 4 < /li>
+                                        </li>
+                                        <li>
+                                            &nbsp; <span>
+                                                < li>
+                                            </span>Punkt 5<span>
+                                                < /li>
+                                            </span>
+                                        </li>
+                                        <span>
+                                            < /ul>
+                                        </span>
+                                    </ul>
+                                    W efekcie otrzymujemy:
+                                    <ul>
+                                        <li>
+                                            Punkt 1
+                                        <ol>
+                                                <li><span>Podpunkt 1</span></li>
+                                                <li>Podpunkt 2</li>
+                                                <li><span>Podpunkt 3</span></li>
+                                         </ol>
+                                        </li>
+                                       <li>Punkt 2</li>
+                                        <li></span>Punkt 3<span></li></span>
+                                        </li>
+                                        <li>Punkt 4</li>
+                                        </li>
+                                        <li></span>Punkt 5<span></li>
+                                    </ul></span>
+                                    </ul>
+                                 </p>
 
                 </section>
 
@@ -258,10 +449,8 @@
                     <p class="article-content">
 
                     <h2 class="article-header">
-                        <span>Znacznik</span> zbudowany jest w następujący sposób:&nbsp;
+                        <span>Tabele</span> umieszczamy w następujący sposób:&nbsp;
                     </h2>
-                    <span>&lt;znacznik</span> atrybut=”wartość”<span>></span>treść
-                    <span>&lt;/znacznik></span><br />
 
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi porro fugiat provident
@@ -482,7 +671,7 @@
 
             </article>
 
-        
+
 
         </div>
 
