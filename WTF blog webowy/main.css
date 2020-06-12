@@ -169,6 +169,9 @@
     .ul{
         list-style: none;
     }
+    .tabela{
+        list-style: none; 
+    }
     span {
         color: #0a2b42;
         font-weight: 700;
