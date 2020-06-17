@@ -170,7 +170,8 @@
 
                     <a id="link__title--two" href="HTML-index.html" title="PRZEJDŹ DO" class=anim>HTML 1.02</a>
 
-                    <h2 class="article-header"><span>Formatowanie</span> tekstu w kodzie. <span>Odnośniki</span> i znaczniki w HTML.
+                    <h2 class="article-header"><span>Formatowanie</span> tekstu w kodzie. <span>Odnośniki</span> i
+                        znaczniki w HTML.
                     </h2>
 
                     <p class="article-content">
@@ -239,13 +240,14 @@
                             <span>odnośnik do poczty:</span></br>
                             Napisz do mnie: < a href="mailto:imie.nazwisko@gmail.com">imie.nazwisko@gmail.com< /a>
                         </li>
-                     </ul>
+                    </ul>
                     </p>
                     <p>
-                        &nbsp;Myślę, że nie należy umieszczać na stronie odnośnika pt. Napisz do mnie w miejscu adresu poczty.
+                        &nbsp;Myślę, że nie należy umieszczać na stronie odnośnika pt. Napisz do mnie w miejscu adresu
+                        poczty.
                         Będzie on poprostu przekierowywał do nieskonfigurowej przeglądarki poczty elektronicznej.
                     </p>
-                 </section>
+                </section>
             </article>
 
             <!-- KOLEJNY SLAJD!!! -->
@@ -426,13 +428,13 @@
                                     <ul>
                                         <li>
                                             Punkt 1
-                                        <ol>
+                                            <ol>
                                                 <li><span>Podpunkt 1</span></li>
                                                 <li>Podpunkt 2</li>
                                                 <li><span>Podpunkt 3</span></li>
-                                         </ol>
+                                            </ol>
                                         </li>
-                                       <li>Punkt 2</li>
+                                        <li>Punkt 2</li>
                                         <li></span>Punkt 3<span></li></span>
                                         </li>
                                         <li>Punkt 4</li>
@@ -440,7 +442,7 @@
                                         <li></span>Punkt 5<span></li>
                                     </ul></span>
                                     </ul>
-                                 </p>
+                                    </p>
 
                 </section>
 
@@ -452,48 +454,67 @@
                         <span>Tabele</span> znaczniki kolumn i wierszy.&nbsp;
                     </h2>
                     <p>
-                        <ul> 
-                            <li>znacznik tabeli to <span>< table>< /table></span>
-                            <li>znaczniki nagłówka tabeli to <span>< thead>< /thead></span></li>
-                            <li>znaczniki zawartości tabali to <span>< tbody>< /tbody></span></li>
-                            <li>znaczniki wiersza tabeli to <span>< tr>< /tr></span></li>
-                            <li>znacznikic komórek tabeli to <span>< th>< /th></span></li>
-                            <li>i znaczniki stopki tabeli to <span>< tfoot>< /tfoot></span></li>
-                        
-                        </ul>
+                    <ul>
+                        <li>znacznik tabeli to <span>
+                                < table>
+                                    < /table>
+                            </span>
+                        <li>znaczniki nagłówka tabeli to <span>
+                                < thead>
+                                    < /thead>
+                            </span></li>
+                        <li>znaczniki zawartości tabali to <span>
+                                < tbody>
+                                    < /tbody>
+                            </span></li>
+                        <li>znaczniki wiersza tabeli to <span>
+                                < tr>
+                                    < /tr>
+                            </span></li>
+                        <li>znacznikic komórek tabeli to <span>
+                                < th>
+                                    < /th>
+                            </span></li>
+                        <li>i znaczniki stopki tabeli to <span>
+                                < tfoot>
+                                    < /tfoot>
+                            </span></li>
+
+                    </ul>
                     </p>
                     <p>
                         Podstawowy kod tabeli wyglądałby następująco:
-                       <ul class="tabela"> <li>
-                           < table>
-                       </li>
+                    <ul class="tabela">
+                        <li>
+                            < table>
+                        </li>
                         <li>
                             &nbsp;< thead>
                         </li>
                         <li>
                             &nbsp;< tr>
                         </li>
-                            <li>
-                                &nbsp;< th>nagłowek 1< /th>
-                            </li>
-                            <li>
-                                &nbsp;< th>nagłowek 2< /th>
-                            </li>
-                            <li>
-                                &nbsp;< th>nagłowek 3< /th>
-                            </li>
-                            <li>
-                                &nbsp;< th>nagłowek 4< /th>
-                            </li>
-                            <li>
-                                &nbsp;< th>nagłowek 5< /th>
-                            </li>&nbsp;< /tr>
                         <li>
-                            < /thead>
+                            &nbsp;< th>nagłowek 1< /th>
                         </li>
+                        <li>
+                            &nbsp;< th>nagłowek 2< /th>
+                        </li>
+                        <li>
+                            &nbsp;< th>nagłowek 3< /th>
+                        </li>
+                        <li>
+                            &nbsp;< th>nagłowek 4< /th>
+                        </li>
+                        <li>
+                            &nbsp;< th>nagłowek 5< /th>
+                        </li>&nbsp;< /tr>
+                            <li>
+                                < /thead>
+                            </li>
                     </ul>
-                
-                <tbody>
+
+                    <tbody>
                         <!-- table row -->
                         <tr>
                             <!-- table data -->
@@ -504,15 +525,15 @@
                             <td>table data</td>
                         </tr>
                         <!-- wiersze => td*5 -->
-                    <tr>
-                        <td colspan="3">01</td>
-                        <!-- <td>02</td>
+                        <tr>
+                            <td colspan="3">01</td>
+                            <!-- <td>02</td>
                         <td>03</td> -->
-                        <td>0400000</td>
-                        <td>05</td>
-                    </tr>
-                </tbody>
-                <tfoot>
+                            <td>0400000</td>
+                            <td>05</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
                         <tr>
                             <td>stopka1</td>
                             <td>stopka2</td>
@@ -520,92 +541,111 @@
                             <td>stopka4</td>
                             <td>stopka5</td>
                         </tr>
-                </tfoot>
-                        < /table>
-                    </p>
-                    <p>
-                        <table border='1'> <span>< table</span> border=`1`<span>> < /table></span> - w ten sposób utworzymy tabele z obramowaniem równym 1px;
-                            <!-- należy utworzyć class-e dla tabeli i w css sformatwać szerokość na 100%, chyba, że nie chcemy... -->
-                            
-                            <caption>NAGŁÓWEK LUB TYTUŁ TABELI</caption>
-                            
-                        <thead>
-                                <tr>
-                                    <th>nagłowek 1</th>
-                                    <th>nagłowek 2</th>
-                                    <th>nagłowek 3</th>
-                                    <th>nagłowek 4</th>
-                                    <th>nagłowek 5</th>
-                                </tr>
-                        </thead>
-                        <tbody>
-                                <!-- table row -->
-                                <tr>
-                                    <!-- table data -->
-                                    <td>table data</td>
-                                    <td>table data</td>
-                                    <td>table data</td>
-                                    <td>table data</td>
-                                    <td>table data</td>
-                                </tr>
-                                <!-- wiersze => td*5 -->
-                            <tr>
-                                <td colspan="3">01</td>
-                                <!-- <td>02</td>
+                    </tfoot>
+                    < /table>
+                        </p>
+                        <p>
+                        <table border='1'> <span>
+                                < table</span> border=`1`<span>> < /table></span> - w ten sposób utworzymy tabele z
+                                    obramowaniem równym 1px;
+                                    <!-- należy utworzyć class-e dla tabeli i w css sformatwać szerokość na 100%, chyba, że nie chcemy... -->
+
+                                    <caption>NAGŁÓWEK LUB TYTUŁ TABELI</caption>
+
+                                    <thead>
+                                        <tr>
+                                            <th>nagłowek 1</th>
+                                            <th>nagłowek 2</th>
+                                            <th>nagłowek 3</th>
+                                            <th>nagłowek 4</th>
+                                            <th>nagłowek 5</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- table row -->
+                                        <tr>
+                                            <!-- table data -->
+                                            <td>table data</td>
+                                            <td>table data</td>
+                                            <td>table data</td>
+                                            <td>table data</td>
+                                            <td>table data</td>
+                                        </tr>
+                                        <!-- wiersze => td*5 -->
+                                        <tr>
+                                            <td colspan="3">01</td>
+                                            <!-- <td>02</td>
                                 <td>03</td> -->
-                                <td>0400000</td>
-                                <td>05</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                                <tr>
-                                    <td>stopka1</td>
-                                    <td>stopka2</td>
-                                    <td>stopka3</td>
-                                    <td>stopka4</td>
-                                    <td>stopka5</td>
-                                </tr>
-                        </tfoot>
-                            <tr>
-                                <td rowspan="4">11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                            </tr>
-                            <tr>
-                                <!-- <td>31</td> ROWSPAN-->
-                                <td>32</td>
-                                <td>33</td>
-                                <td>34</td>
-                                <td>35</td>
-                            </tr>
-                            <!-- td{komórka}*5 -->
-                            <tr>
-                                <!-- <td>komka17</td> ROWSPAN-->
-                                <td>komka27</td>
-                                <td>komka37</td>
-                                <td>komka47</td>
-                                <td>komka57</td>
-                            </tr>
-                            <tr>
-                                <!-- td{komórka $}*5 -->
-                                <!-- <td>komka31</td> ROWSPAN-->
-                                <td>komka32</td>
-                                <td>komka33</td>
-                                <td>komka34</td>
-                                <td>komka35</td>
-                            </tr>
+                                            <td>0400000</td>
+                                            <td>05</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>stopka1</td>
+                                            <td>stopka2</td>
+                                            <td>stopka3</td>
+                                            <td>stopka4</td>
+                                            <td>stopka5</td>
+                                        </tr>
+                                    </tfoot>
+                                    <tr>
+                                        <td rowspan="4">11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>31</td> ROWSPAN-->
+                                        <td>32</td>
+                                        <td>33</td>
+                                        <td>34</td>
+                                        <td>35</td>
+                                    </tr>
+                                    <!-- td{komórka}*5 -->
+                                    <tr>
+                                        <!-- <td>komka17</td> ROWSPAN-->
+                                        <td>komka27</td>
+                                        <td>komka37</td>
+                                        <td>komka47</td>
+                                        <td>komka57</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- td{komórka $}*5 -->
+                                        <!-- <td>komka31</td> ROWSPAN-->
+                                        <td>komka32</td>
+                                        <td>komka33</td>
+                                        <td>komka34</td>
+                                        <td>komka35</td>
+                                    </tr>
                         </table>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sapiente rem assumenda officia
-                        aspernatur illo dolorem doloribus totam? Porro similique enim impedit sint praesentium magnam
-                        voluptas fugiat labore, corporis molestias?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sapiente rem assumenda officia
-                        aspernatur illo dolorem doloribus totam? Porro similique enim impedit sint praesentium magnam
-                        voluptas fugiat labore, corporis molestias?
-                    </p>
+                        <h2>siły zbrojne</h2>
+                        <dl>
+                            <dt>description title</dt>
+                            <dd>description details, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima ad
+                                quae culpa consequuntur nesciunt, non corrupti harum dolore beatae, quia vel cumque aut
+                                omnis atque soluta sint tempore magni temporibus.</dd>
+
+                            <dt>wojownik</dt>
+                            <dd>zbroja, siła, zasieg, ble ble ble Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Sunt, iure voluptatem. Minima dolore voluptates corporis? Et aperiam sapiente
+                                excepturi illum consequatur maiores omnis soluta id veniam maxime. Tenetur, sapiente
+                                deleniti.</dd>
+                        </dl>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sapiente rem assumenda
+                            officia
+                            aspernatur illo dolorem doloribus totam? Porro similique enim impedit sint praesentium
+                            magnam
+                            voluptas fugiat labore, corporis molestias?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sapiente rem assumenda
+                            officia
+                            aspernatur illo dolorem doloribus totam? Porro similique enim impedit sint praesentium
+                            magnam
+                            voluptas fugiat labore, corporis molestias?
+                        </p>
                 </section>
 
             </article>

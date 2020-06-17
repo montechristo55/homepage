@@ -23,6 +23,7 @@ return myNumber;
 
 const myResult = calculate(age);
 
+
 console.log(age);
 console.log(myResult);
 
